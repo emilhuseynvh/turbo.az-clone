@@ -1,0 +1,539 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+img, svg{
+    vertical-align: middle;
+}
+.container{width: 63vw; margin: auto;}
+.deyis{
+    color: #ca1016 !important;
+    border: 1px solid #ca1016 !important;
+    background-color: #ffe6e5 !important;
+}
+.display{display: none !important;}
+.none{
+    pointer-events: none;
+    opacity: .1;
+}
+header{
+    background-color: #ca1016;
+}
+img{object-fit: cover;}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+nav ul{display: flex;}
+nav ul li{padding: 5px 10px 0 10px; font-family: Arial, Helvetica, sans-serif; color: #fff;}
+nav h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 0 10px 5px 10px;
+}
+nav button{
+    background-color: #7ed321;
+    border: 1px solid #7ed321;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 10px;
+}
+.select{display: flex !important; justify-content: space-between !important; width: 250px !important; outline: none; opacity: .7; border: 1px solid #dfe3e9; padding: 10px 0 !important; height: 46px;  border-radius: 7px; box-shadow: -1px 5px 20px 0px rgb(82 90 101 / 10%);}
+.card .ag-urek{color: #fff;}
+main{display: flex; gap:20px; margin: 50px auto; flex-wrap: wrap;}
+.card{
+    position: relative;
+    width: 250px;
+    box-shadow: 0 17px 34px 0 rgba(44, 39, 56, 0.04), 0 8px 17px 0 rgba(44, 39, 56, 0.02);
+    border-radius: 10px;
+}
+#marka-element{border-radius: 0;}
+.tgl{
+    display: none;
+}
+#selects{
+    display: flex;
+    gap: 10px;
+}
+.card i{
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    font-size: 22px;
+} 
+#last-icon{
+    display: none;
+    color: red;
+}
+.card-img img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-txt{padding: 20px;}
+.card-txt h4{
+    color: #212c3a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.card-txt .name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 3px 0;
+}
+.card-txt .about{
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212c3a;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-txt .date{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0  5px 0;
+    color: #8d94ad;
+    font-size: 14px;
+    font-weight: 400;
+}
+#header-btns{
+    color: #ca1016;
+    display: flex;
+    width: 240px;
+}
+#selects{
+    display: flex !important;
+    margin: 20px auto;
+
+}
+#header-input{
+    padding: 20px 0;
+    background-color: #ebedf3;
+}
+#hamisi{border-radius: 7px 0 0 7px;}
+#surulmus{border-radius: 0 7px 7px 0}
+.header-btn{
+    margin: 0;
+    width: 66px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    color: #8d94ad;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #dfe3e9;
+    box-sizing: border-box;
+    flex: 1 0;
+}
+
+
+#selects-second{
+    display: flex;
+    gap: 10px;
+}
+#price-inputs{
+    display: flex;
+}
+#price-inputs .select{
+    outline: none;
+    width: 7vw !important;
+    height: 46px;
+    text-align: center;
+}
+#qiymet1{border-radius: 7px 0 0 7px;}
+#qiymet2{border-radius: 0 7px 7px 0;}
+#mezenne{width: 70px !important;}
+.btnbtn{
+    width: 5vw;
+    height: 50px;
+    line-height: 46px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 7px;
+    border: solid 1px #dfe3e9;
+    background-color: #fff;
+    color: #212c3a;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out;
+    box-sizing: border-box;
+    user-select: none;
+}
+#il-min, #il-maks{
+    width: 120px !important;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px 0 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+    line-height: 17px;
+    z-index: 1;
+}
+#il-min{border-radius: 7px 0 0 7px !important;}
+#il-maks{border-radius: 0 7px 7px 0 !important;}
+#son{display: flex; justify-content: space-between; width: 96%; margin: 40px auto;}
+#son-first-element{margin: 10px 0;}
+#sifirla{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #8d94ad;
+}
+#daha-cox{
+    cursor: pointer;
+    margin: 0 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #ca1016
+}
+#son button{
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #ca1016 !important;
+    border-color: #ca1016 !important;
+    padding: 15px 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #8d94ad;
+    text-decoration: none;
+    vertical-align: middle;
+    border: none;
+    border-radius: 7px;
+} 
+.row{
+    height: 46px;
+    margin: 20px 0;
+    display: flex;
+    gap: 7px;
+}
+.two-selects{
+    display: flex;
+}
+.two-select{
+    text-align: center;
+    height: 46px;
+    width: 9.85vw !important;
+}
+#hecm-min{border-radius: 7px 0 0 7px;}
+#hecm-max{border-radius: 0 7px 7px 0;}
+#guc-min{border-radius: 7px 0 0 7px;}
+#guc-max{border-radius: 0 7px 7px 0;}
+#yurus-min{border-radius: 7px 0 0 7px;}
+#yurus-max{border-radius: 0 7px 7px 0;}
+
+#hamisi2{
+    width: 100px !important;
+    border-radius: 7px 0 0 7px;
+}
+#header-btns-last{display: flex;}
+#sexsi2{border-radius: 0 7px 7px 0;}
+#selects-fifth{gap: 13px !important;}
+.pdng{
+    height: 48px;
+    line-height: 46px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 7px;
+    border: solid 1px #dfe3e9;
+    background-color: #fff;
+    color: #212c3a;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out;
+    box-sizing: border-box;
+    user-select: none;
+}
+#selects-sixth ul{
+    display: flex;
+    gap: 10px;
+}
+#between{
+    position: relative;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 15px;
+    color: #212c3a;
+    z-index: 1;
+}
+#header-bottom{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#butun-markalar i{
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    font-size: 17px !important;
+}
+#butun-markalar-input input, #filtr-input select{
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    color: #0b0b0b;
+    border: 1px solid #f6f7fa;
+    background-color: #f6f7fa;
+    padding: 0 10px 0 36px;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px;
+}
+#marka-ve-model p{
+    padding: 15px;
+    font-size: 16px;
+    color: #8d94ad;
+    line-height: 1;
+}
+.width{
+    width: 40px;
+}
+main{ display:flex; justify-content:  center;}
+select{
+    border: 1px solid #dfe3e9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px 0 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+    line-height: 17px;
+    z-index: 1;
+}
+#filtir-img img{margin: 10px 0;}
+#filtir-img{margin: 30px 0; }
+#filtir-img-first-child{display: flex;justify-content: space-evenly;  margin: 20px 0;}
+#filtir-img-last-child{display: flex;justify-content: space-evenly; gap: 20px;}
+#filtir-img p{
+    text-align: center;
+    white-space: nowrap;
+    color: #8d94ad;
+    font-size: 13px;
+}
+#filtir-button{width: 90vw; margin: 70px auto 30px auto; }
+#filtir-button button{
+    width: 100%;
+    color: #ca1016;
+    border: 1px solid #ca1016;
+    font-weight: 400;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 7px !important;
+}
+/* Birbank */
+#salammeleyki{background-color: #dfe3e9; display: flex;}
+#premium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #dfe3e9;
+}
+#filtir-button-second-child button{
+    font-size: 14px;
+    line-height: 17px;
+    color: #8d94ad;
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #f1f3f7;
+    -webkit-text-size-adjust: 100%;
+}
+#filtir-button-second-child{
+    display: flex;
+    width: 90vw;
+    margin: 50px auto;
+}
+
+#filtir-button-second-child-first-element{ border-radius: 7px 0 0 7px;  }
+#filtir-button-second-child-last-element{ border-radius:  0 7px 7px 0 ;}
+#premium-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#premium-img {
+    width: 40%;
+    height: 30px;
+}
+
+#premium-img img {
+    width: 100%;
+    height: 100%;
+}
+#saytlar{display: none;}
+#header-input{display: initial;}
+nav{display: flex;}
+@media only screen and (max-width: 1255px) {
+    .container{width: 80vw;}
+    #premium-img{width: 50vw;}
+}
+@media only screen and (max-width: 990px) {
+    #salammeleyki{display: none;}
+    #premium-img{width: 60vw;}
+    .container{width: 90vw;}
+    nav{display: none;}
+    #header-input{display: none;}
+    #saytlar{display: initial;}
+    #saytlar-mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5px;
+        border-bottom: 1px solid #333;
+    }
+    
+    #saytlar-ad {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 20px 10px;
+    }
+    
+    #saytlar-ad h3 {
+        font-weight: bold;
+        color: #8d94ad;
+        font-family: sans-serif;
+        padding: 0 10px;
+        border-right: 2px solid #F7F8FA;
+    
+    }
+    
+    #turbo {
+        color: #ca1016 !important;
+    }
+    
+    #elan-yerlesdir {
+        width: 10%;
+        margin: auto;
+    }
+    
+    #elan-yerlesdir a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #ca1016;
+    }
+    
+    #elan-yerlesdir i {
+        font-size: 1.1em;
+        color: #FFF;
+    }
+    
+    #filter-mobile {
+        width: 100%;
+        background-color: #F7F8FA;
+        padding: 8px 15px 15px;
+        display: flex;
+    }
+    
+    #filter-mobile-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    #filter-mobile-container h3 {
+        font-family: sans-serif;
+        font-weight: 200;
+        font-size: 1em;
+    }
+    .model-sec{pointer-events: none; opacity: .5;}
+    #markalar-open svg {
+        height: 20px;
+        width: 20px;
+    }
+    
+    #markalar-mobile {
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0 10px;
+        border-bottom: 1px solid #F7F8FA;
+    
+    }
+    
+    #markalar-mobile-ad {
+        display: flex;
+    }
+    
+    #filterler-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 0 0 15px 15px;
+        height: 60px;
+        padding: 0 10px;
+        border-top: 1px solid #F7F8FA;
+    }
+    
+    #moto-mobile {
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 15px 15px 15px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        margin-top: 10px;
+        padding: 0 10px;
+        border-bottom: 1px solid #F7F8FA;
+    }
+    
+    .yeni-elan-mobile {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .yeni-elan-mobile a {
+        padding-left: 5px;
+        color: #4c88f9;
+        font-family: sans-serif;
+    }
+    
+    .yeni-elan-mobile h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 832px) {
+    .container{width: 95vw; margin: auto;}
+    main{justify-content: space-around;}
+    .card{max-width: 40vw;}
+}
+
